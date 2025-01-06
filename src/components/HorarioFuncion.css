@@ -1,0 +1,13 @@
+.caixa-hr{
+    max-width: 60%;
+    border-radius: 6px;
+    padding: 5px;
+}
+.msgm{
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(139, 139, 139);
+    border-radius: 6px;
+   
+}

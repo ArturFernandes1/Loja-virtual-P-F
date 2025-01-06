@@ -1,0 +1,153 @@
+.container-area{
+    background-color: rgb(24, 23, 85);
+
+}
+#container-area{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+  
+   
+}
+
+.title-missao{
+    color: rgb(74, 136, 230);
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 60px; /* Espaço à esquerda */
+}
+.texto-missao p{
+    color: white;
+    font-size: 17px;
+    text-align: left;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left: 60px; /* Espaço à esquerda */
+}
+
+.img-fluid3 {
+    width: 520px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-right: 40px; 
+    margin-bottom: 20px;
+    border-radius: 10px;
+ 
+  
+}
+/*Para telas de max-width 650px  */
+@media screen and (max-width: 1150px) {
+    #container-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgb(24, 23, 85);
+    }
+    
+    #container-area {
+        margin-top: 20px; /* OBS Reduzindo a margem superior para economizar espaço */
+        max-width: calc(100% -30px); /* Usando a largura total disponível menos as margens */
+    }
+    
+    .title-missao {
+        color: rgb(74, 136, 230);
+        text-align: left;
+        font-size: 28px;
+        margin-top: 20px;
+        margin-left: 10px; /* Espaço à esquerda */
+    }
+    
+    .texto-missao p{
+        color: white;
+        font-size: 14px; /* Reduzindo o tamanho da fonte para melhor legibilidade em dispositivos menores */
+        text-align: left; /* Centralizando o texto */
+        margin-left: 8px; /* Reduzindo as margens para economizar espaço */
+        margin-right: 8px;
+    }
+    
+    .img-fluid3 {
+        width: calc(100%); /* Usando a largura total disponível menos as margens */
+        max-width: 590px; /* Limitando a largura da imagem para caber em dispositivos menores */
+        height: auto; /* Mantendo a proporção da imagem */
+        margin: 20px 0; /* Adicionando margens superior e inferior */
+        border-radius: 10px;
+    }
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 680px) {
+
+    #container-area {
+        margin-top: 150px; /* OBS Reduzindo a margem superior para economizar espaço */
+        max-width: calc(100%); /* Usando a largura total disponível menos as margens */
+    }
+    
+
+ 
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+    #container-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgb(24, 23, 85);
+    }
+    
+    #container-area {
+        margin-top: 170px; /* OBS Reduzindo a margem superior para economizar espaço */
+        max-width: calc(100%); /* Usando a largura total disponível menos as margens */
+    }
+    
+    .title-missao {
+        color: rgb(74, 136, 230);
+        text-align: left;
+        font-size: 23px;
+        margin-top: 20px;
+        margin-left: 10px; /* Espaço à esquerda */
+    }
+    
+    .texto-missao p{
+        color: white;
+        font-size: 14px; /* Reduzindo o tamanho da fonte para melhor legibilidade em dispositivos menores */
+        text-align: left; /* Centralizando o texto */
+        margin-left: 8px; /* Reduzindo as margens para economizar espaço */
+        margin-right: 8px;
+    }
+    
+    .img-fluid3 {
+        width: calc(100%); /* Usando a largura total disponível menos as margens */
+        max-width: 390px; /* Limitando a largura da imagem para caber em dispositivos menores */
+        height: auto; /* Mantendo a proporção da imagem */
+        margin: 20px 0; /* Adicionando margens superior e inferior */
+        border-radius: 10px;
+    }
+    
+}

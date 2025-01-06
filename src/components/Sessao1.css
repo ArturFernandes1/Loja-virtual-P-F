@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container1a{
+    background-color: rgb(24, 23, 85);
+    margin-top: 0px;
+   
+
+}
+#container0a{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+  
+   
+}
+
+.title{
+    color: rgb(86, 91, 97);
+    text-align: justify;
+    margin-top: 40px;
+    margin-left: 60px; /* Espaço à esquerda */
+    font-size: 35px;
+}
+
+.texto1 p{
+    color: white;
+    font-size: 17px;
+    text-align: left;
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-left: 60px; /* Espaço à esquerda */
+}
+ 
+.img-fluid {
+    width: 520px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-right: 40px; 
+    margin-bottom: 40px;
+    border-radius: 0px 180px 180px 0px;
+
+}
+
+/*Para telas de max-width 650px  */
+@media screen and (max-width: 1150px) {
+    #container0a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgb(24, 23, 85);
+    }
+    
+    #container0a{
+        max-width: calc(100% -30px); /* Usando a largura total disponível menos as margens */
+    }
+    
+    .title{
+        color: rgb(74, 136, 230);
+        text-align: left;
+        font-size: 28px;
+        margin-top: 20px;
+        margin-left: 10px; /* Espaço à esquerda */
+    }
+    
+    .texto1 p{
+        color: white;
+        font-size: 14px; /* Reduzindo o tamanho da fonte para melhor legibilidade em dispositivos menores */
+        text-align: left; /* Centralizando o texto */
+        margin-left: 8px; /* Reduzindo as margens para economizar espaço */
+        margin-right: 8px;
+    }
+    
+    .img-fluid {
+        width: calc(100%); /* Usando a largura total disponível menos as margens */
+        max-width: 590px; /* Limitando a largura da imagem para caber em dispositivos menores */
+        height: auto; /* Mantendo a proporção da imagem */
+        margin: 20px 0; /* Adicionando margens superior e inferior */
+        border-radius: 0px 180px 180px 0px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    #container0a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgb(24, 23, 85);
+    }
+    
+    #container0a{
+        margin-top: 0px;
+        max-width: calc(100%); /* Usando a largura total disponível menos as margens */
+    }
+    
+    .title {
+        color: rgb(74, 136, 230);
+        text-align: left;
+        font-size: 23px;
+        margin-top: 20px;
+        margin-left: 10px; /* Espaço à esquerda */
+    }
+    
+    .texto1 p{
+        color: white;
+        font-size: 14px; /* Reduzindo o tamanho da fonte para melhor legibilidade em dispositivos menores */
+        text-align: left; /* Centralizando o texto */
+        margin-left: 8px; /* Reduzindo as margens para economizar espaço */
+        margin-right: 8px;
+    }
+    
+    .img-fluid {
+        width: calc(100%); /* Usando a largura total disponível menos as margens */
+        max-width: 390px; /* Limitando a largura da imagem para caber em dispositivos menores */
+        height: auto; /* Mantendo a proporção da imagem */
+        margin: 20px 0; /* Adicionando margens superior e inferior */
+        border-radius: 0px 180px 180px 0px;
+    }
+    
+}

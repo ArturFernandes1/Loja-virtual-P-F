@@ -1,0 +1,84 @@
+
+ /* CustomFooter.css */
+
+ *{
+    margin: 0;
+    padding: 0;
+   
+   }
+  .footer-container {
+    background-color: #4e4e4e; 
+    padding: 60px 20px 20px 50px;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  
+  .col{
+    text-align: left;
+  }
+  .col ul{
+    margin-left: -27px;
+  }
+  .col h5{
+    font-size: 25px;
+    color: white;
+  }
+  .col ul{
+    list-style: none;
+  }
+  .col ul li a{
+    text-align: left;
+    color: white;
+  }
+  .footer-heading {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .footer-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .sub-footer{
+    background-color: #454646; /* Um cinza mais claro */
+    text-align: center;
+    padding: 20px;
+    line-height: 17px;
+  }
+  
+  #paragrafo {
+    text-align: center;
+    color: white;
+    margin: 5px 0; /* Espaçamento vertical */
+    font-size: 14px;
+  }
+  
+  /* Aqui você pode adicionar mais personalizações conforme necessário */
+  @media screen and (max-width: 400px) {
+    .col h5{
+      font-size: 20px;
+      color: white;
+    }
+    .col ul{
+      list-style: none;
+    }
+    .col ul li a{
+      text-align: left;
+      color: white;
+    }
+    .sub-footer {
+      height: 15vh;
+    }
+    .sub-footer p{
+      text-align: center;
+      font-size: 16px;
+    }
+  
+    
+  }

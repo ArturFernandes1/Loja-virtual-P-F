@@ -1,0 +1,112 @@
+/* CSS Geral */
+.topnav {
+  background-color: #323030;
+  overflow: hidden;
+  text-align: right;
+  padding: 0px;
+}
+.logo-empresa{
+  float: left;
+  display: flex;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.topnav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  padding-top: 35px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.item-last {
+  margin-right: 50px; /* Adiciona margem direita para separar o último link */
+}
+
+.topnav a:hover {
+  border-bottom: 2px solid white;
+}
+
+.topnav a.icon {
+  display: none;
+}
+
+/* CSS Responsivo */
+@media screen and (max-width: 768px) {
+
+  .logo-empresa{
+    float: left;
+    display: flex;
+    padding: 15px;
+    margin-left: 0px;
+  }
+  .topnav {
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: center;
+    align-items: center; /* Centraliza os itens horizontalmente */
+  
+  }
+  .topnav a {
+    display: none; /* Esconde os links por padrão */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 20px 0; /* Adiciona algum padding vertical */
+
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+  
+  }
+  .topnav a:hover{
+    border-bottom: none;
+   
+  }
+
+  .item-1{
+    margin-top: 80px;
+    
+  }
+  .item-last{
+    margin-right: 0;
+  }
+  /* Aplica o efeito hover a todos os itens */
+.item-1:hover,
+.item-2:hover,
+.item-3:hover,
+.item-4:hover,
+.item-last:hover {
+  background-color: #575555;
+}
+
+  .topnav.responsive a {
+    display: block; /* Exibe os links quando o menu está em modo responsivo */
+  }
+  .topnav a.icon {
+    background-color: white;
+    display: block; /* Mostra o ícone de hambúrguer */
+    float: none; /* Remove o float */
+    position: absolute; /* Define a posição como absoluta */
+    right: 10px; /* Ajuste o recuo do ícone do lado direito */
+    top: -10px;
+    padding: 4px 10px 4px 10px;
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    color: rgb(51, 49, 49);
+    font-size: 35px;
+  }
+}
+
+
+
+
+
+  
+
+
+
