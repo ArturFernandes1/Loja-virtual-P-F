@@ -3,13 +3,11 @@
     padding: 0px;
 }
 .texto-descricao {
-    width: 100%;
     font-family: 'Quicksand', sans-serif;
 }
 .text-desc {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
-    margin-bottom: 20px; 
 }
 .text-desc h1{
     color: #000;
@@ -23,9 +21,9 @@
 .text-desc hr{
     width: 100%;
     color: rgb(41, 41, 41);
-    
 }
 .text-detalhe{
+    color: black;
     margin-top: 15px;
     font-family: 'Inria Serif';
     font-size: 19px;

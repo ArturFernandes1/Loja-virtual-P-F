@@ -12,104 +12,56 @@
 .formulario {
     max-width: 1000px;
     text-align: center;
-  
     padding: 30px;
-
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     width: 100%;
- 
-   
 }
 
-
-/* Estilos de texto e alinhamento */
-.descricao h1,
-.descricao p,
-#text-anexar p,
-#text-anexar,
-.formulario input,
-.formulario textarea {
-    margin-left: auto;
-    margin-right: auto;
-}
 .frase-orientacao{
     text-align: left;
-    color: #474545;
-    font-family: "Inria Serif";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-size: 18px;
 }
-/* Estilos para a seção de anexar arquivos */
-#text-anexar {
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    justify-content: flex-start;
-    margin-bottom: 15px;
-}
-input[type="text"]::placeholder,
-input[type="date"]::placeholder,
-input[type="email"]::placeholder {
-    color: #777575de;
-    font-family: "Inria Serif";
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-textarea::placeholder{
-    color: #777575de;
-    font-family: "Inria Serif";
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-#text-anexar input[type="file"] {
-    border: none;
-    font-size: 16px;
-}
-
 /* Ajustes para os inputs e textarea */
 .formulario input[type="text"],
 .formulario input[type="email"],
 .formulario input[type="date"],
 .formulario textarea {
     width: 100%;
-    background-color:#D9D9D9;;
+    background-color:#D9D9D9;
     padding: 12px;
     margin-bottom: 15px;
     border: none;
- 
+    border-radius: 6px;
     font-size: 16px;
     box-sizing: border-box;
-    margin-right: 20px;
+  
+}
+#text-anexar{
+    margin-bottom: 15px;
 }
 
 .formulario div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 15px;
 }
 
 /* Estilos para os botões */
 .buttons {
-    flex-direction: row;
-    
-    max-width: 920px;
+    display: flex;
+    justify-content: space-between; /* Garante que os botões fiquem um de cada lado */
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-top: 10px; /* Ajuste de espaço entre os campos e os botões */
 }
 
 .buttons button {
-    background-color:#D9D9D9 ; /* Cor verde mais suave */
-    width: 100px; 
+    background-color: #D9D9D9; /* Cor do fundo dos botões */
+    width: 18%; /* Ajusta os botões para que ocupem quase metade da largura cada */
     color: #474545;
     font-family: "Inria Serif";
     font-size: 18px;
-
-
+    border-radius: 6px;
     cursor: pointer;
     border: none;
     padding: 10px;
@@ -118,47 +70,47 @@ textarea::placeholder{
 
 .buttons button:hover {
     background-color: #88888a; /* Cor do hover */
+    color: white;
 }
 
-/* Ajuste para dispositivos com tela até 700px */
-/* Ajuste para dispositivos com tela até 768px */
+/* Ajustes para dispositivos com tela até 768px */
 @media screen and (max-width: 768px) {
-    .formulario,
-    #text-anexar,
-    .formulario div {
-        flex-direction: column; 
-    }
-
-    .buttons {
-        display: flex; /* Garante que a flexbox esteja ativa */
-        flex-direction: row; /* Direção dos botões lado a lado */
-        justify-content: center; /* Centraliza os botões horizontalmente */
-        width: 100%; /* Garante que o container use toda a largura disponível */
-        gap: 10px; /* Adiciona espaço entre os botões */
-    }
-
-    .buttons button {
-        width: auto; /* Ajusta a largura dos botões automaticamente */
-        font-size: 16px;
-        padding: 10px;
-    }
-
     #text-anexar {
         margin: 10px 0;
         text-align: left;
     }
-
     #text-anexar label {
-        font-size: 18px; 
+        font-size: 18px;
     }
-
     #text-anexar input[type="file"] {
-        font-size: 14px; 
+        font-size: 14px;
     }
-
     .descricao h1,
     .descricao p {
-        font-size: 18px; 
-        margin: 0 15px; 
+        font-size: 18px;
+        margin: 0 15px;
+    }
+
+    /* Para os campos do formulário, se necessário */
+    .formulario div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Garante o alinhamento entre os itens */
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    /* Ajuste nos botões para dispositivos móveis */
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; /* Ocupa toda a largura disponível */
+        gap: 10px;
+    }
+
+    .buttons button {
+        width: 48%; /* Ajusta a largura dos botões */
+        font-size: 16px;
+        padding: 10px;
+        margin: 0;
     }
 }

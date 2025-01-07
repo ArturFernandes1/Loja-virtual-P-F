@@ -8,6 +8,7 @@ function Sessao1() {
         <div className="container1a">
             <div id="container0a">
                 <img src={Moveis1} className="img-fluid" alt="Imagem de uma cozinha planejada"/>
+                
                     <div className="texto1">
                         <h2 className="title">MÓVEIS PLANEJADOS</h2>
                   {/*       <hr></hr> */}
@@ -18,7 +19,7 @@ function Sessao1() {
                         Oferecemos a você acabamentos e farragens da melhor qualidade e com uma grande gama de variedades
                         para
                         que seu projeto realmente tenha a personalização que você merece. </p>
-                        </div> 
+                    </div> 
             </div>
         </div>
     )

@@ -1,133 +1,138 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-.container1a{
-    background-color: rgb(24, 23, 85);
-    margin-top: 0px;
-   
+   body {
+            margin: 0;
+            padding: 0;
+        }
 
-}
-#container0a{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    max-width: 1400px;
-    padding: 20px;
-    margin: 0 auto;
-    font-family: 'Times New Roman', Times, serif;
-  
-   
-}
+        .container1a {
+            background-color: white;
+            margin-top: 0px;
+        }
 
-.title{
-    color: rgb(86, 91, 97);
-    text-align: justify;
-    margin-top: 40px;
-    margin-left: 60px; /* Espaço à esquerda */
-    font-size: 35px;
-}
+        .title {
+            color: rgb(63, 64, 65);
+            text-align: center;
+            font-weight: 700;
+            margin-top: 70px;
+            margin-bottom: -15px;
+            margin-left: 60px; /* Espaço à esquerda */
+            margin-right: 40px;
+            font-size: 35px;
+        }
 
-.texto1 p{
-    color: white;
-    font-size: 17px;
-    text-align: left;
-    margin-top: 30px;
-    margin-right: 40px;
-    margin-left: 60px; /* Espaço à esquerda */
-}
- 
-.img-fluid {
-    width: 520px;
-    height: 400px;
-    margin-top: 20px;
-    margin-left: 110px;
-    margin-right: 40px; 
-    margin-bottom: 40px;
-    border-radius: 0px 180px 180px 0px;
+        .texto1 p {
+            color: rgb(63, 64, 65);
+            font-size: 19px;
+            text-align: justify;
+            margin-top: 50px;
+            margin-right: 40px;
+            margin-left: 60px; /* Espaço à esquerda */
+        }
 
-}
+        #container0a {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            max-width: 1400px;
+            padding: 20px;
+            margin: 0 auto;
+            font-family: 'Times New Roman', Times, serif;
+        }
 
-/*Para telas de max-width 650px  */
-@media screen and (max-width: 1150px) {
-    #container0a{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: 'Times New Roman', Times, serif;
-        background-color: rgb(24, 23, 85);
-    }
-    
-    #container0a{
-        max-width: calc(100% -30px); /* Usando a largura total disponível menos as margens */
-    }
-    
-    .title{
-        color: rgb(74, 136, 230);
-        text-align: left;
-        font-size: 28px;
-        margin-top: 20px;
-        margin-left: 10px; /* Espaço à esquerda */
-    }
-    
-    .texto1 p{
-        color: white;
-        font-size: 14px; /* Reduzindo o tamanho da fonte para melhor legibilidade em dispositivos menores */
-        text-align: left; /* Centralizando o texto */
-        margin-left: 8px; /* Reduzindo as margens para economizar espaço */
-        margin-right: 8px;
-    }
-    
-    .img-fluid {
-        width: calc(100%); /* Usando a largura total disponível menos as margens */
-        max-width: 590px; /* Limitando a largura da imagem para caber em dispositivos menores */
-        height: auto; /* Mantendo a proporção da imagem */
-        margin: 20px 0; /* Adicionando margens superior e inferior */
-        border-radius: 0px 180px 180px 0px;
-    }
-    
-}
+        .img-fluid {
+            width: 520px;
+            max-width: 500px;
+            height: 400px;
+            margin-top: 40px;
+            margin-left: 110px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            border-radius: 0px 160px 0px 160px;
+        }
 
+        .image-container {
+            position: relative;
+            width: 520px;
+            height: 400px;
+            margin-top: 40px;
+            margin-left: 110px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+        }
 
+        .image1 {
+            z-index: 1;
+            width: 100%;
+            height: auto;
+        }
 
+        .image2 {
+            z-index: 2;
+            width: 50%;
+            height: 50%;
+            top: 0;
+            left: 0;
+        }
+
+        @media screen and (max-width: 1150px) {
+            #container0a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .title {
+                text-align: center;
+                font-size: 28px;
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+
+            .texto1 p {
+                width: 80%;
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .img-fluid {
+                width: 550px;
+                max-width: 400px;
+                height: auto;
+                margin: 0 auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border-radius: 0px 140px 0px 140px;
+            }
+
+            .image-container {
+                width: 400px;
+                height: auto;
+                margin: 20px auto;
+            }
+        }
 
 @media screen and (max-width: 400px) {
-    #container0a{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        font-family: 'Times New Roman', Times, serif;
-        background-color: rgb(24, 23, 85);
-    }
-    
-    #container0a{
-        margin-top: 0px;
-        max-width: calc(100%); /* Usando a largura total disponível menos as margens */
-    }
-    
-    .title {
-        color: rgb(74, 136, 230);
-        text-align: left;
+    .title{
+        text-align: center;
+        padding-bottom: 15px;
         font-size: 23px;
-        margin-top: 20px;
-        margin-left: 10px; /* Espaço à esquerda */
+        font-weight: 700;
+        margin: auto;
     }
-    
     .texto1 p{
-        color: white;
-        font-size: 14px; /* Reduzindo o tamanho da fonte para melhor legibilidade em dispositivos menores */
-        text-align: left; /* Centralizando o texto */
-        margin-left: 8px; /* Reduzindo as margens para economizar espaço */
-        margin-right: 8px;
+        font-size: 19px;
+        text-align: center;
+        margin: auto;
     }
-    
     .img-fluid {
-        width: calc(100%); /* Usando a largura total disponível menos as margens */
-        max-width: 390px; /* Limitando a largura da imagem para caber em dispositivos menores */
-        height: auto; /* Mantendo a proporção da imagem */
-        margin: 20px 0; /* Adicionando margens superior e inferior */
-        border-radius: 0px 180px 180px 0px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 0px 100px 0px 100px;
     }
-    
+
+
 }

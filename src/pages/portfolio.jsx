@@ -7,7 +7,7 @@ function Portfolio() {
   return (
     <>
       <Navbar/>
-      <ImgBackground title={'Protifolio'}/>
+      <ImgBackground title={'Portifolio'}/>
    
     </>
   );
