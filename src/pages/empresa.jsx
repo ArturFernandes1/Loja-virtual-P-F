@@ -7,7 +7,7 @@ function Empresa() {
   return (
     <>
       <Navbar/>
-      <ImgBackground title='Empresa'/>
+      <ImgBackground title='Empresa'/> 
       <CampoEmpresa/>
     </>
   );

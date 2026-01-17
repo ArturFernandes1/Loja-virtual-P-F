@@ -1,28 +1,34 @@
-
 import React from "react";
-import Moveis1 from '../assets/Moveis1.jpg';
+import Salaproj1 from "../assets/salaproject.png";
 import "../components/Sessao1.css";
 
-function Sessao1() {
-    return (
-        <div className="container1a">
-            <div id="container0a">
-                <img src={Moveis1} className="img-fluid" alt="Imagem de uma cozinha planejada"/>
-                
-                    <div className="texto1">
-                        <h2 className="title">MÓVEIS PLANEJADOS</h2>
-                  {/*       <hr></hr> */}
-                        <p>Feitos especialmente para cada ambiente da casa, os MÓVEIS SOB MEDIDA oferecem ganho de espaço,
-                        conforto,
-                        personalização e requinte aos espaços. Conosco, seus móveis são pensados de acordo com sua
-                        necessidade.
-                        Oferecemos a você acabamentos e farragens da melhor qualidade e com uma grande gama de variedades
-                        para
-                        que seu projeto realmente tenha a personalização que você merece. </p>
-                    </div> 
-            </div>
-        </div>
-    )
-}
 
-export default Sessao1; 
+export default function Sessao1() {
+  return (
+    <section className="sessao1">
+      <div className="sessao1-container">
+        {/* Texto */}
+        <div className="sessao1-texto">
+          <h1 className="sessao1-title">
+            VOCÊ EM TODOS OS DETALHES DE SUA CASA!
+          </h1>
+
+          <p>
+            Nossos móveis são pensados na real necessidade de cada cliente, em
+            todo projeto levamos em conta o estilo de vida, gostos e rotina de
+            nossos clientes para entregar não apenas um móvel, mas sim qualidade
+            de vida no seu dia a dia, e mais personalidade para o seu lar.
+          </p>
+
+          <p>Qualidade, sofisticação e personalização.</p>
+          <p>Mais de você em seus móveis.</p>
+        </div>
+
+        {/* Imagem */}
+        <div className="sessao1-imagem">
+          <img src={Salaproj1} alt="Imagem de uma sala planejada" />
+        </div>
+      </div>
+    </section>
+  );
+}

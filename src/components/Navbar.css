@@ -1,112 +1,127 @@
-/* CSS Geral */
+/* =====================================
+   NAVBAR – ESTRUTURA GERAL
+   ===================================== */
+
 .topnav {
-  background-color: #323030;
-  overflow: hidden;
-  text-align: right;
-  padding: 0px;
-}
-.logo-empresa{
-  float: left;
   display: flex;
-  padding: 20px;
-  margin-left: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 90px;
+  padding: 0 50px;
+  position: relative;
 }
 
-.topnav a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  padding-top: 35px;
+/* =====================================
+   LOGO
+   ===================================== */
+
+.logo-container {
+  position: absolute;
+  left: 50px;
+}
+
+.logo-empresa {
+  height: 50px;
+}
+
+/* =====================================
+   MENU CENTRAL (DESKTOP)
+   ===================================== */
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  position: relative;
+  color: #193B65;
   text-decoration: none;
   font-size: 17px;
   font-weight: 400;
+  padding: 10px 0;
 }
 
-.item-last {
-  margin-right: 50px; /* Adiciona margem direita para separar o último link */
+/* Linha animada (esquerda → direita) */
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
+  height: 3px;
+  background-color: #193B65;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
 }
 
-.topnav a:hover {
-  border-bottom: 2px solid white;
+.menu a:hover::after {
+  transform: scaleX(1);
 }
 
-.topnav a.icon {
+/* =====================================
+   ÍCONE HAMBÚRGUER
+   ===================================== */
+
+.icon {
   display: none;
+  background: none;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  color: #333;
 }
 
-/* CSS Responsivo */
+/* =====================================
+   MOBILE (ATÉ 768px)
+   ===================================== */
+
 @media screen and (max-width: 768px) {
 
-  .logo-empresa{
-    float: left;
-    display: flex;
-    padding: 15px;
-    margin-left: 0px;
-  }
   .topnav {
-    flex-direction: column; /* Alinha os itens verticalmente */
-    justify-content: center;
-    align-items: center; /* Centraliza os itens horizontalmente */
-  
-  }
-  .topnav a {
-    display: none; /* Esconde os links por padrão */
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    padding: 20px 0; /* Adiciona algum padding vertical */
-
-    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
-  
-  }
-  .topnav a:hover{
-    border-bottom: none;
-   
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
   }
 
-  .item-1{
-    margin-top: 80px;
-    
-  }
-  .item-last{
-    margin-right: 0;
-  }
-  /* Aplica o efeito hover a todos os itens */
-.item-1:hover,
-.item-2:hover,
-.item-3:hover,
-.item-4:hover,
-.item-last:hover {
-  background-color: #575555;
-}
-
-  .topnav.responsive a {
-    display: block; /* Exibe os links quando o menu está em modo responsivo */
-  }
-  .topnav a.icon {
-    background-color: white;
-    display: block; /* Mostra o ícone de hambúrguer */
-    float: none; /* Remove o float */
-    position: absolute; /* Define a posição como absoluta */
-    right: 10px; /* Ajuste o recuo do ícone do lado direito */
-    top: -10px;
-    padding: 4px 10px 4px 10px;
-    margin-top: 20px;
-    margin-right: 5px;
+  .logo-container {
+    position: relative;
+    left: 0;
     margin-bottom: 10px;
-    border-radius: 6px;
-    color: rgb(51, 49, 49);
-    font-size: 35px;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    text-align: center;
+  }
+
+  .menu a {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  /* Remove animação no mobile */
+  .menu a::after {
+    display: none;
+  }
+
+  .menu a:hover {
+    background-color: #575555;
+    color: #ffffff;
+  }
+
+  .topnav.responsive .menu {
+    display: flex;
+  }
+
+  .icon {
+    display: block;
+    top: 15px;
   }
 }
-
-
-
-
-
-  
-
-
-

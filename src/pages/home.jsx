@@ -2,12 +2,11 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Carousel from '../components/Carousel';
 import Sessao1 from '../components/Sessao1';
-import Missao from '../components/Missao';
 import Sessao2 from '../components/Sessao2';
 import NossoServico from '../components/NossoServico';
-import QuadrosEspaco from '../components/QuadrosEspaco';
 import Footer from '../components/Footer';
-
+import ValoresEmpresa from '../components/ValoresEmpresa';
+import Parallax from '../components/Parallax';
 
 function Home() {
   return (
@@ -15,10 +14,10 @@ function Home() {
       <Navbar/>
       <Carousel/>
       <Sessao1/>
-      <Missao/>
+      <ValoresEmpresa/>
       <Sessao2/> 
+      <Parallax/>
       <NossoServico/>
-      <QuadrosEspaco/>
       <Footer/>
     </>
   );

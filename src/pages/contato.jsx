@@ -9,7 +9,7 @@ function Contato() {
   return (
     <>
       <Navbar/>
-      <ImgBackground title={'Contato'}/>
+      <ImgBackground title={'Contato'}/> 
       <SessaoContato/>
       <Localizacao/>
       <Footer/>

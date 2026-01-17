@@ -10,7 +10,7 @@ function Orcamento() {
   return (
     <>
       <Navbar/>
-      <ImgBackground title={'Orçamento'}/>
+    <ImgBackground title={'Orçamento'}/> 
       <OrcamentoSessao1/>
       <OrcamentoSessao2/>
       <Footer/>

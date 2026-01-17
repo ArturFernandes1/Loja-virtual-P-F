@@ -1,5 +1,6 @@
+/* ESTILOS ORIGINAIS (NÃO ALTERADOS) */
 .container-servicos {
-    background: #cccfcf;
+    background: #eff0f0;
     position: relative;
     width: 100%;
     height: auto;
@@ -9,7 +10,6 @@
     max-width: 100%;
     height: auto;
     display: block;
-    /* opacity: 0.9; */
   }
   
   .card-servicos {
@@ -25,109 +25,165 @@
     align-content: center;
     flex-wrap: wrap; 
     gap: 10px;
- 
   }
   
   .micro-servicos {
-    background-color: white; /* Fundo semitransparente para visualização */
-    margin: 20px; /* Espaçamento entre os cards */
-    padding: 40px; /* Espaçamento interno dos cards */
+    background-color: white;
+    margin: 20px;
+    padding: 40px;
     width: auto;
-   
     max-height: 250px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
   }
-
-
-
   
-.title-servicos{
+  .title-servicos{
     color: #000;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 19px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-align: center;
     margin-bottom: 25px;
-}
-.micro-servicos p{
+  }
+  
+  .micro-servicos p{
     color: #000;
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem;
-}
-.icon-servicos{
-  width: 40px;
-  height: 40px;
-  margin-right: 15px;
-}
-
-@media screen and (min-width: 119px) and (max-width: 1450px) {
-  .card-servicos { 
-    gap: 30px;
- 
-  }
-  .micro-servicos {
-    margin: 5px; /* Espaçamento entre os cards */
-    padding: 20px; /* Espaçamento interno dos cards */
-    width: auto;
-    height: auto;
-    text-align: center; /* Centraliza o texto */
-  }
-  .title-servicos{
-    font-size: 17px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-.micro-servicos p{
-  font-size: 14px;
-  line-height: 1.1rem;
-}
-.icon-servicos{
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-
-}
-
-@media screen and (min-width: 811px) and (max-width: 998px) {
-  .card-servicos { 
-    display: flex;
-    gap: 10px;
- 
-  }
-  
-  .micro-servicos {
-    margin: 5px; /* Espaçamento entre os cards */
-    padding: 20px; /* Espaçamento interno dos cards */
-    width: 250px;
-    height: 170px;
-    
   }
   
   .icon-servicos{
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
-  
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
   }
-
-}
-
-
+  
+  /* NOVAS REGRAS PARA MOBILE (<1000px) - Comportamento de carrossel */
+  @media screen and (max-width: 999px) {
+    .card-servicos.scrollable {
+      position: relative;
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 1rem 2rem;
+      gap: 1.5rem;
+      height: auto;
+      min-height: 350px;
+      
+      /* Ocultar barra de rolagem */
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    
+    .card-servicos.scrollable::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .card-servicos.scrollable .micro-servicos {
+      flex: 0 0 auto;
+      width: 300px;
+      height: 250px;
+      margin: 10px;
+    }
+    
+    .img-fundo {
+      display: none;
+    }
+    
+    .container-servicos {
+      padding: 2rem 0;
+    }
+  }
+  
+  /* Botões do carrossel (só aparecem no mobile) */
+  .carousel-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .prev-button,
+  .next-button {
+    background-color: white;
+    color: #2a3f54;
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Media Queries originais mantidas */
+  @media screen and (min-width: 119px) and (max-width: 1450px) {
+    .card-servicos { 
+      gap: 30px;
+    }
+    .micro-servicos {
+      margin: 5px;
+      padding: 20px;
+      width: auto;
+      height: auto;
+      text-align: center;
+    }
+    .title-servicos{
+      font-size: 17px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .micro-servicos p{
+      font-size: 14px;
+      line-height: 1.1rem;
+    }
+    .icon-servicos{
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 811px) and (max-width: 998px) {
+    .card-servicos { 
+      display: flex;
+      gap: 10px;
+    }
+    
+    .micro-servicos {
+      margin: 5px;
+      padding: 20px;
+      width: 250px;
+      height: 170px;
+    }
+    
+    .icon-servicos{
+      width: 35px;
+      height: 35px;
+      margin-right: 10px;
+    }
+  }
+  
   @media screen and (max-width: 811px) {
     .img-fundo{
-        display: none;
+      display: none;
     }
     .card-servicos {
       position: relative;
       grid-template-columns: 1fr;
-      gap: 10;
+      gap: 10px;
       margin: 0 auto;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -139,12 +195,63 @@
     }
   
     .title-servicos{
-        font-size: 17px;
-        margin-bottom: 5px;
+      font-size: 17px;
+      margin-bottom: 5px;
     }
     .micro-servicos p{
-        font-size: 15px;
-        line-height: 1.1rem;
+      font-size: 15px;
+      line-height: 1.1rem;
     }
   }
   
+  @media screen and (max-width: 400px) {
+    .img-fundo {
+      display: none;
+    }
+  
+    .container-servicos {
+      padding: 20px 0;
+    }
+  
+    .card-servicos {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      overflow-y: hidden;
+      gap: 16px;
+      padding: 20px;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+  
+    .card-servicos::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .micro-servicos {
+      flex: 0 0 auto;
+      width: 280px;
+      height: auto;
+      padding: 20px;
+      margin: 0;
+      border-radius: 14px;
+    }
+  
+    .title-servicos {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+  
+    .micro-servicos p {
+      font-size: 15px;
+      line-height: 1.4rem;
+    }
+  
+    .icon-servicos {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+  }

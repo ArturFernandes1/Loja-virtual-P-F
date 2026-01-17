@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.div-butao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.div-butao button {
+    background-color: #181755;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 27px;
+    width: 340px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer; /* Para tornar o botão clicável */
+}
+
+
+.button-contact:hover{
+    background-color: #294cc0;
+    color: white;
+    transition: 0.5s;
+
+
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sessao2.css"  
-import Cozinha1 from "../assets/Cozinha1.jpg"
+import Cozinha1 from "../assets/Cozinhagpt2.png"
 
 function Sessao2() {
     return (

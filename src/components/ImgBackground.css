@@ -1,30 +1,40 @@
-.container-background{
+.container-background {
     position: relative;
     z-index: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
 }
 
+.container-background.loaded {
+    opacity: 1;
+}
 
-.img-background{
+.img-background {
     width: 100%;
     height: auto;
-
+    transition: opacity 0.8s ease-in-out;
 }
 
 .titulo-background {
-    position: absolute; /* Permite que o título se sobreponha à imagem */
-    top: 40%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta o posicionamento para garantir centralização exata */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    color: white; /* Ajuste a cor conforme necessário */
-    font-size: 45px; /* Ajuste o tamanho da fonte conforme necessário */
-    z-index: 1; /* Garante que o título esteja acima da imagem */
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 4rem;
+    color: white;
+    z-index: 1;
+    font-size: 5rem;
+    font-weight: 200;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
 }
+
+.titulo-background.visible {
+    opacity: 1;
+}
+
 @media screen and (max-width: 768px) {
-    .titulo-background{
+    .titulo-background {
         font-size: 35px;
     }
-    
 }

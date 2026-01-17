@@ -1,6 +1,7 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-import ImgBackground from '../components/ImgBackground';
+import React from 'react'
+import Navbar from '../components/Navbar'
+import ImgBackground from '../components/ImgBackground'
+import Cards from '../components/Card-iterative'
 
 
 function Portfolio() {
@@ -8,6 +9,7 @@ function Portfolio() {
     <>
       <Navbar/>
       <ImgBackground title={'Portifolio'}/>
+      <Cards/>
    
     </>
   );
